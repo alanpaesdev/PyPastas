@@ -1,0 +1,45 @@
+{
+  "language_name": "English (US)",
+  "months": [
+    "01_JAN", "02_FEB", "03_MAR", "04_APR",
+    "05_MAY", "06_JUN", "07_JUL", "08_AUG",
+    "09_SEP", "10_OCT", "11_NOV", "12_DEC"
+  ],
+  "structure": {
+    "01_IDENTITY": ["DOCUMENTS"],
+    "02_FINANCES": {
+      "GROCERIES": [],
+      "HOUSING": [],
+      "TRANSPORTATION": {
+        "VEHICLES": ["DOCUMENTATION", "MAINTENANCE", "FINES"],
+        "APPS": []
+      },
+      "UTILITIES": {
+        "WATER": [],
+        "ELECTRICITY": [],
+        "PHONE_INTERNET": [],
+        "CREDIT_CARD": [],
+        "SUBSCRIPTIONS": []
+      },
+      "INVOICES": [],
+      "INSURANCE": [],
+      "TAXES": [],
+      "ASSETS": [],
+      "SHOPPING_AND_ACQUISITIONS": [],
+      "DEBTS_AND_LOANS": [],
+      "INVESTMENTS": []
+    },
+    "03_HEALTH": ["EXAMS", "PRESCRIPTIONS", "VACCINES"],
+    "04_LEGAL": ["DOCUMENTS", "PROCEEDINGS"],
+    "05_DEVELOPMENT": ["STUDIES", "CAREER", "COURSES"],
+    "06_PROJECTS": ["ACTIVE", "ARCHIVED"],
+    "07_MEMORY": ["LEGACY"]
+  },
+  "partition_rules": {
+    "yearly_monthly": ["APPS", "GROCERIES"],
+    "yearly": ["ASSETS", "SHOPPING_AND_ACQUISITIONS", "DEBTS_AND_LOANS", "INVESTMENTS", "PROCEEDINGS", "COURSES", "STUDIES", "EXAMS", "PRESCRIPTIONS", "VACCINES", "DOCUMENTATION", "MAINTENANCE", "FINES", "WATER", "ELECTRICITY", "PHONE_INTERNET", "CREDIT_CARD", "SUBSCRIPTIONS", "INVOICES", "INSURANCE", "TAXES"]
+  },
+  "archive_dir": "HISTORY",
+  "media_root": "MEDIA",
+  "media_subdirs": ["PHOTOS", "VIDEOS"]
+}

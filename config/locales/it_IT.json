@@ -1,0 +1,45 @@
+{
+  "language_name": "Italiano",
+  "months": [
+    "01_GEN", "02_FEB", "03_MAR", "04_APR",
+    "05_MAG", "06_GIU", "07_LUG", "08_AGO",
+    "09_SET", "10_OTT", "11_NOV", "12_DIC"
+  ],
+  "structure": {
+    "01_IDENTITA": ["DOCUMENTI"],
+    "02_FINANZE": {
+      "ALIMENTAZIONE": [],
+      "ABITAZIONE": [],
+      "TRASPORTI": {
+        "VEICOLI": ["DOCUMENTAZIONE", "MANUTENZIONE", "MULTE"],
+        "APP": []
+      },
+      "UTENZE": {
+        "ACQUA": [],
+        "ENERGIA": [],
+        "TELEFONO_INTERNET": [],
+        "CARTA_DI_CREDITO": [],
+        "ABBONAMENTI": []
+      },
+      "FATTURE": [],
+      "ASSICURAZIONI": [],
+      "IMPOSTE": [],
+      "PATRIMONIO": [],
+      "ACQUISTI_E_AQUISIZIONI": [],
+      "DEBITI_E_PRESTITI": [],
+      "INVESTIMENTI": []
+    },
+    "03_SALUTE": ["ESAMI", "RICETTE", "VACCINI"],
+    "04_LEGALE": ["DOCUMENTI", "PROCEDIMENTI"],
+    "05_SVILUPPO": ["STUDI", "CARRIERA", "CORSI"],
+    "06_PROGETTI": ["ATTIVI", "ARCHIVIATI"],
+    "07_MEMORIA": ["STORICO_FAMILIARE"]
+  },
+  "partition_rules": {
+    "yearly_monthly": ["APP", "ALIMENTAZIONE"],
+    "yearly": ["ACQUISTI_E_AQUISIZIONI", "DEBITI_E_PRESTITI", "INVESTIMENTI", "PATRIMONIO", "PROCEDIMENTI", "CORSI", "STUDI", "ESAMI", "RICETTE", "VACCINI", "DOCUMENTAZIONE", "MANUTENZIONE", "MULTE", "ACQUA", "ENERGIA", "TELEFONO_INTERNET", "CARTA_DI_CREDITO", "ABBONAMENTI", "FATTURE", "ASSICURAZIONI", "IMPOSTE"]
+  },
+  "archive_dir": "STORICO",
+  "media_root": "MEDIA",
+  "media_subdirs": ["FOTO", "VIDEO"]
+}

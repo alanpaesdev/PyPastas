@@ -1,0 +1,45 @@
+{
+  "language_name": "Português (BR)",
+  "months": [
+    "01_JAN", "02_FEV", "03_MAR", "04_ABR",
+    "05_MAI", "06_JUN", "07_JUL", "08_AGO",
+    "09_SET", "10_OUT", "11_NOV", "12_DEZ"
+  ],
+  "structure": {
+    "01_IDENTIDADE": ["DOCUMENTOS"],
+    "02_FINANCEIRO": {
+      "ALIMENTACAO": [],
+      "HABITACAO": [],
+      "TRANSPORTE": {
+        "VEICULOS": ["DOCUMENTACAO", "MANUTENCAO", "MULTAS"],
+        "APPS": []
+      },
+      "CONTAS_CONSUMO": {
+        "AGUA": [],
+        "ENERGIA": [],
+        "TELEFONE_INTERNET": [],
+        "CARTAO_CREDITO": [],
+        "ASSINATURAS": []
+      },
+      "NOTAS_FISCAIS": [],
+      "SEGUROS": [],
+      "IMPOSTOS": [],
+      "PATRIMONIO": [],
+      "COMPRAS_E_AQUISICOES": [],
+      "DEBITOS_E_EMPRESTIMOS": [],
+      "INVESTIMENTOS": []
+    },
+    "03_SAUDE": ["EXAMES", "RECEITUARIOS", "VACINAS"],
+    "04_JURIDICO": ["DOCUMENTOS", "PROCESSOS"],
+    "05_DESENVOLVIMENTO": ["ESTUDOS", "CARREIRA", "CURSOS"],
+    "06_PROJETOS": ["ATIVOS", "ARQUIVADOS"],
+    "07_MEMORIA": ["LEGADO"]
+  },
+  "partition_rules": {
+    "yearly_monthly": ["APPS", "ALIMENTACAO", "NOTAS_FISCAIS"],
+    "yearly": ["INVESTIMENTOS", "DEBITOS_E_EMPRESTIMOS", "COMPRAS_E_AQUISICOES", "PATRIMONIO","PROCESSOS","CURSOS","ESTUDOS","EXAMES", "RECEITUARIOS", "VACINAS", "DOCUMENTACAO", "MANUTENCAO", "MULTAS", "AGUA", "ENERGIA", "TELEFONE_INTERNET", "CARTAO_CREDITO", "ASSINATURAS", "NOTAS_FISCAIS", "SEGUROS", "IMPOSTOS"]
+  },
+  "archive_dir": "HISTORICO",
+  "media_root": "MEDIA",
+  "media_subdirs": ["FOTOS", "VIDEOS"]
+}

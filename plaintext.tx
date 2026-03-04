@@ -1,0 +1,14 @@
+lifeos_project/
+│
+├── main.py
+├── config/
+│   ├── i18n_loader.py       <-- O motor que varre a pasta e carrega os idiomas
+│   └── locales/             <-- Os arquivos de tradução isolados
+│       ├── pt_BR.json
+│       ├── pt_PT.json
+│       ├── en_US.json
+│       └── it_IT.json
+├── core/
+│   └── architect.py
+└── ui/
+    └── app.py
